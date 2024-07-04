@@ -19,7 +19,7 @@ module.exports = {
   ],
   plugins: ["react", "react-hooks", "@typescript-eslint"],
   rules: {
-    // Define your custom ESLint rules here, if needed.
+    "@typescript-eslint/no-explicit-any": "error"
   },
   settings: {
     react: {
