@@ -1,0 +1,21 @@
+.results {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  max-width: 1600px;
+  margin: 0 auto;
+  justify-content: center;
+
+
+
+  .result{
+    padding: 2rem;
+    width: 300px;
+    border-radius: 1rem;
+  border: 0.1rem solid black;
+    &:hover {
+      border: 0.2rem solid #535bf2;
+    }
+  }
+}

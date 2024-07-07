@@ -1,0 +1,25 @@
+
+$primary-color: #880000;
+$primary-color-hover: darken($primary-color, 10%);
+$text-color: #fff;
+$border-radius: 12px;
+
+
+  .errorBtn {
+    background-color: $primary-color;
+    display: block;
+    position: sticky;
+    top: 20px;
+    left: 20px;
+    border: none;
+    color: $text-color;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: $border-radius;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: $primary-color-hover;
+  }
+}
