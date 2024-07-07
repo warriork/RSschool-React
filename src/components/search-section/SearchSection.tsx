@@ -29,8 +29,9 @@ export class SearchSection extends React.Component<Props, State> {
     if (savedSearchName) {
       this.props.fetchData(JSON.parse(savedSearchName));
       this.setState({ searchName: JSON.parse(savedSearchName) });
+    } else {
+      this.props.fetchData();
     }
-    this.props.fetchData();
   }
 
   render(): ReactNode {
