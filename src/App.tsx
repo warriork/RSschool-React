@@ -25,21 +25,11 @@ class App extends React.Component<null, AppState> {
         throw new Error(`Response status: ${response.status}`);
       }
       const data = await response.json();
-      console.log(data); // Log data after fetching
-
       this.setState({ data });
     } catch (error) {
       console.error('Error fetching data:', error);
     }
   };
-
-  componentDidUpdate(_prevProps: null, prevState: AppState) {
-    // Check if data has changed before logging
-    if (this.state.data !== prevState.data) {
-      console.log('State updated:', this.state.data);
-    }
-  }
-
   render() {
     const { data } = this.state;
 
