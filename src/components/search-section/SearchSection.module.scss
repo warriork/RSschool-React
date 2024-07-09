@@ -1,0 +1,54 @@
+
+$primary-color: #4CAF50;
+$primary-color-hover: darken($primary-color, 10%);
+$disabled-color: #ccc;
+$text-color: #fff;
+$border-radius: 12px;
+
+.searchFormContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  border-bottom: 0.1rem solid black;
+
+  form {
+    display: flex;
+    align-items: center;
+  }
+
+  input[type="text"] {
+    padding: 12px 20px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: $border-radius;
+    font-size: 16px;
+    transition: border-color 0.3s;
+
+    &:focus {
+      border-color: $primary-color;
+      outline: none;
+    }
+  }
+
+  button {
+    background-color: $primary-color;
+    border: none;
+    color: $text-color;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: $border-radius;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: $primary-color-hover;
+    }
+
+    &:disabled {
+      background-color: $disabled-color;
+      cursor: not-allowed;
+    }
+  }
+}
